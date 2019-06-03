@@ -67,6 +67,8 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
+
+
 /* Header Styles */
 
 header {
@@ -77,13 +79,19 @@ header {
     header {
         display: flex;
         flex-direction: column-reverse;
-        text-align: center;
-        justify-content: space-around;
-        
+        justify-content: center;
+        }
+}
 
-
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 }
+
+
 
 header nav {
     margin-top: 40px; 
@@ -94,7 +102,7 @@ header nav {
 
 @media (max-width: 800px) {
     header nav {
-        display: flex;
+        
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
@@ -104,10 +112,41 @@ header nav {
     }
 }
 
+
+
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
 }
+
+@media (max-width: 500px) {
+    header nav  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        
+    }
+}
+
+@media (max-width: 500px) {
+    header nav a {
+        display: flex;
+        padding: 10px;
+        border-bottom: 2px solid gray;
+        width: 100%;
+        justify-content: center;
+        font-size: 20px;
+        border-top: 2px solid gray;
+        
+    }
+    
+    
+}
+
+
+
+
 
 header nav a:hover {
     text-decoration: underline;
@@ -117,13 +156,23 @@ header nav a:hover {
 header .logo {
     margin: 28px 0 0 91px;
 } 
-
 @media (max-width: 800px) {
     header .logo {
-        width: 18%;
-        margin-left: 325px;
+       margin: 0;
+       
+   }
+}
+@media (max-width: 500px) {
+    .logo {
+        margin: 0;
+        
+        
     }
 }
+
+
+
+
 
 @media (max-width: 800px) {
      .logo2 { display: none;
@@ -139,12 +188,14 @@ header .logo {
 }
 
 @media (max-width: 800px) {
-     .cta .cta-text {
+    .cta .cta-text  {
         width: 100%;
-        text-align: center;
+        
         
     }
 }
+
+
 
 .cta .cta-text {
     font-size: 72px;
@@ -155,6 +206,17 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 82px 0 0;
+}
+@media (max-width: 500px) {
+    .cta .cta-text  {
+       width: 100%;
+       
+       text-align: center;
+       margin: 0;
+       justify-content: space-around;
+       
+       
+   }
 }
 
 .cta .cta-text button {
@@ -174,13 +236,27 @@ header .logo {
 
 /* Main Content Styles */
 
-.main-content {
+.main-content  {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+}
+
+@media (max-width: 500px) {
+    .main-content .top-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-content h4 {
+        margin-top: 20px;
+    }
 }
 
 .main-content .top-content {
@@ -194,6 +270,14 @@ header .logo {
 
 .main-content .bottom-content {
     display: flex;
+}
+
+@media (max-width: 500px) {
+    .main-content .bottom-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    }
 }
 
 .main-content .bottom-content p {
