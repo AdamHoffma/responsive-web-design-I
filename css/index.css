@@ -80,6 +80,7 @@ header {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        text-align: center;
         }
 }
 
@@ -88,6 +89,7 @@ header {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        text-align: center;
     }
 }
 
@@ -157,13 +159,14 @@ header .logo {
     margin: 28px 0 0 91px;
 } 
 @media (max-width: 800px) {
-    header .logo {
+     header .logo {
        margin: 0;
        
    }
+   
 }
 @media (max-width: 500px) {
-    .logo {
+     header .logo {
         margin: 0;
         
         
